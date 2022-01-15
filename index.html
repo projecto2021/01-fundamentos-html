@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de CSS</title>
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    h1 {
+      color: yellowgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <article id="temario-css">
+    <h1 style="color: lightsteelblue;">Aprendiendo CSS</h1>
+    <p><i style="font-weight: bold; color: orangered;">Cascading Style Sheets</i> - Hojas de Estilos en Cascada</p>
+    <h2>Temario del Curso</h2>
+    <ul>
+      <!--Enlace-->
+
+      <li><a href="index.html#selectores-basicos">Selectores Básicos</a></li>
+      <li> <a href="index.html#selectores-avanzados">Selectores avanzados</a></li>
+      <li> <a href="index.html#pseudoclases">Pseudoclases</a></li>
+      <li> <a href="index.html#pseudoelementos">Pseudoelementos</a></li>
+      <li> <a href="index.html#agrupar-selectores">Agrupar Selectores</a></li>
+      <li> <a href="index.html#algoritmo-css">El Algoritmo de CSS</a></li>
+      <li> <a href="index.html#reseteo-normalize">Reseteo y Normalize</a></li>
+      <li> <a href="index.html#prefijos-navegadores">Prefijos de los Navegadores</a></li>
+      <li><a href="box-model.html">Modelo de Caja</a></li>
+  </article>
+  </ul>
+  <article id="selectores-basicos">
+    <hr>
+    <h2>Selectores basicos</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut laboriosam unde soluta repellat neque nobis ipsa
+      optio deleniti quis magnam praesentium omnis, distinctio animi, vero nostrum ipsum veritatis officia sed.
+    </p>
+    <p id="parrafo-dos">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum est fugit deleniti veritatis pariatur repudiandae
+      suscipit tempore, voluptas maiores adipisci dolorem doloribus quasi delectus molestiae esse minima excepturi nulla
+      consequatur!
+    </p>
+    <p class="text-20 bg-steelblue text-white">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero sed veniam aliquam eligendi. Recusandae quibusdam
+      quasi veniam numquam, sed praesentium esse, eos nobis, hic ratione illo aut quia. Ab, magni.
+    </p>
+    <p class="text-32 bg-steelblue text-white">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae odit est unde dolor neque natus, libero, quo
+      suscipit officia aliquid, minus quis ad deserunt tempora vel quae? Quibusdam, tempore deleniti?
+    </p>
+    <p class="text-32 bg-steelblue text-white">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae odit est unde dolor neque natus, libero, quo
+      suscipit officia aliquid, minus quis ad deserunt tempora vel quae? Quibusdam, tempore deleniti?
+    </p>
+    <a href="index.html#temario-css">☝️</a>
+    <hr>
+  </article>
+  <article id="selectores-avanzados">
+    <h2>Selectores avanzados</h2>
+    <h3>Selectores de hijo</h3>
+    <h4>Selector de hijo</h4>
+    <ul class="hijos-directos">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h4>Selector de hijos directos</h4>
+    <ul class="hijos-descendientes">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <hr>
+    <h3>Selectores de hermanos</h3>
+    <h4>Selector de hermanos (en general)</h4>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-general"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h4>Selector de hermanos adyacente</h4>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-adyacente"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h4>Selector de Atributos</h4>
+    <h3>Selectores de Atributos</h3>
+    <nav>
+      <ul class="selectores-atributos">
+        <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+        <li><a class="menu-item cursos button" href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+        <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+        <li><a href="http://jonmircha.com/cv" target="_blank">CV</a></li>
+        <li><a class="menu item ahora button" href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+        <li><a class="menu-item notas button" href="http://jonmircha.com/notas" target="_blank">Notas</a></li>
+        <li><a href="index.html#temario-css">Regresar al Temario</a></li>
+      </ul>
+    </nav>
+    <h3>Selector Universal(*)</h3>
+    <ul class="selector-universal">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li>I<b>Invierno</b></li>
+    </ul>
+
+    <a href="index.html#temario-css">☝️</a>
+
+  </article>
+  <hr>
+  <article id="pseudoclases">
+    <h2>Pseudoclases</h2>
+    <form class="form-pseudoclases" autocomplete="off">
+      <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+      <br>
+      <input type="email" name="correo" placeholder="Escribe tu correo" required>
+      <br>
+      <input type="submit" disabled>
+      <br>
+      <input type="submit">
+    </form>
+    <nav class="menu-pseudoclases">
+      <a href="#seccion1">Seccion1</a>
+      <a href="#seccion2">Seccion2</a>
+      <a href="#seccion3">Seccion3</a>
+      <a href="#seccion4">Seccion4</a>
+    </nav>
+    <p class="p-pseudoclases">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa alias velit. Obcaecati ipsam esse,
+      repellendus, distinctio quidem voluptas quo possimus inventore id at in, est unde quibusdam non aperiam?
+    </p>
+    <ol class="lista-pseudoclases">
+      <li>Mú de Aries</li>
+      <li>Aldebarán de Tauro</li>
+      <li>Saga & Kanon de Géminis</li>
+      <li>Death Mask de Cáncer</li>
+      <li>Aioria de Leo</li>
+      <li>Shaka de Virgo</li>
+      <li>Dohko de Libra</li>
+      <li>Milo de Escorpión</li>
+      <li>Aioros de Sagitario</li>
+      <li>Shura de Capricornio</li>
+      <li>Camus de Acuario</li>
+      <li>Afordita de Piscis</li>
+    </ol>
+    <article class="articulo-pseudoclases">
+      <header>Esto es un header</header>
+      <p>Esto es un p</p>
+      <p>Esto es un p</p>
+      <p>Esto es un p</p>
+      <div>Esto es una div</div>
+      <p>Esto es un p</p>
+      <section>Esto es una section</section>
+      <p>Esto es un p</p>
+      <div>Esto es una div</div>
+      <p>Esto es un p</p>
+      <footer>Esto es un footer</footer>
+    </article>
+    <a href="index.html#temario-css">☝️</a>
+  </article>
+  <hr>
+  <article id="pseudoelementos">
+    <h2>Pseudoelementos</h2>
+    <p>
+      <i>Nandai Myth Cloth EX </i><span class="saga-geminis"> Saga de Geminis</span><span class="saga-precio">500</span>
+    </p>
+    <p class="p-pseudoelementos">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi sunt quo soluta architecto aut optio
+      impedit distinctio rerum atque. Autem in ullam saepe voluptates error, repudiandae rerum ipsam soluta!
+    </p>
+    <input class="input-pseudoelemtos" type="text" name="nombre" placeholder="Escribe tu nombre">
+    <a href="index.html#temario-css">☝️</a>
+  </article>
+  <hr>
+  <article id="agrupar-selectores">
+    <h2>Agrupar Selectores</h2>
+    <form class="form-agrupar-selectores" autocomplete="off">
+      <input type="text" name="nombre" placeholder="Escribe tu nombre">
+      <input type="email" name="correo" placeholder="
+Escribe tu correo">
+      <textarea name="comentarios" placeholder="Escribe tus comentarios" cols="30" rows="10"></textarea>
+      <input type="submit">
+    </form>
+    <a href="index.html#temario-css">☝</a>
+  </article>
+  <hr>
+  <article id="algoritmo-css">
+    <h2>El Algoritmo de CSS</h2>
+    <ul>
+      <li>La Cascada</li>
+      <li>La Especificidad</li>
+      <li>La Herencia</li>
+    </ul>
+    <blockquote id="cita-marco" class="cita-marco" style="background-color: rebeccapurple;">
+      Se tolerante con los demas y estricto contigo mismo - <cite>Marco Aurelio</cite>
+    </blockquote>
+    <a href="index.html#temario-css">☝</a>
+  </article>
+  <hr>
+  <h2 id="reseteo-normalize">Reseteo y Normalize</h2>
+  <a href="index.html#temario-css">☝</a>
+  <hr>
+  <h2>Prefijos de los Navegadores</h2>
+  <article id="prefijos-navegadores">
+<ul>
+  <li>Navegadores de Microsoft <code><b>-ms-</b></code></li>
+  <li>Firefox <code><b>-moz-</b></code></li>
+  <li>Todos los demas navegadores <code><b>-webkit-</b></code></li>
+</ul>
+    <a href="index.html#temario-css">☝</a>
+  </article>
+  <hr>
+  <a href="index.html#temario-css">☝</a>
+  <hr>
+  <a href="index.html#temario-css">☝</a>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
